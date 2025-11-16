@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Learn Programming</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">📚 Learn Programming</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li id="navAuth">
+                    <a href="dashboard.html">Dashboard</a> | <a href="#" onclick="logout()">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Dashboard -->
+    <section class="dashboard-section">
+        <div class="container">
+            <h1 id="welcomeMsg">Welcome!</h1>
+            
+            <h2>Your Progress</h2>
+            <div id="progressContainer" class="progress-grid"></div>
+
+            <h2>Continue Learning</h2>
+            <div class="courses-grid">
+                <a href="lesson.html?course=c&lesson=0" class="course-card">
+                    <div class="course-icon">📘</div>
+                    <h3>C Programming</h3>
+                </a>
+                <a href="lesson.html?course=cpp&lesson=0" class="course-card">
+                    <div class="course-icon">📗</div>
+                    <h3>C++ Programming</h3>
+                </a>
+                <a href="lesson.html?course=java&lesson=0" class="course-card">
+                    <div class="course-icon">📙</div>
+                    <h3>Java Programming</h3>
+                </a>
+                <a href="lesson.html?course=python&lesson=0" class="course-card">
+                    <div class="course-icon">📕</div>
+                    <h3>Python Programming</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Learn Programming. All rights reserved.</p>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
