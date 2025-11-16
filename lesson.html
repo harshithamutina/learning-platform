@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson - Learn Programming</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">📚 Learn Programming</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li id="navAuth">
+                    <a href="login.html">Login</a> | <a href="signup.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Lesson Content -->
+    <section class="lesson-section">
+        <div class="container">
+            <div class="lesson-header">
+                <h1 id="lessonTitle">Lesson Title</h1>
+                <p id="breadcrumb"></p>
+            </div>
+            <div id="lessonContent" class="lesson-content"></div>
+            <div class="lesson-navigation">
+                <button id="prevBtn" class="btn btn-secondary" onclick="previousLesson()">← Previous</button>
+                <a id="quizBtn" href="quiz.html" class="btn btn-primary">Take Quiz →</a>
+                <button id="nextBtn" class="btn btn-secondary" onclick="nextLesson()">Next →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Learn Programming. All rights reserved.</p>
+    </footer>
+
+    <script src="js/lesson.js"></script>
+</body>
+</html>
